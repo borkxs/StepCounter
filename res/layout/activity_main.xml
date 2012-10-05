@@ -1,14 +1,132 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/hello_world"
-        tools:context=".MainActivity" />
+	<TableLayout
+		android:paddingTop="10dip"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:stretchColumns="*"
+		>
 
-</RelativeLayout>
+		<Button
+		    android:id="@+id/button"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/start_button"
+		    android:onClick="startButtonPushed"
+		/>
+
+		<TextView
+		    android:id="@+id/textView1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/l_accel"
+		    android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+		<TableRow>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="14sp"
+				android:text="@string/x_axis"
+				android:gravity="center"
+			/>
+	
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="14sp"
+				android:text="@string/y_axis"
+				android:gravity="center"
+			/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="14sp"
+				android:text="@string/z_axis"
+				android:gravity="center"
+			/>
+		</TableRow>
+		
+		<TableRow>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/x_axis"
+				android:gravity="center"
+			/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/y_axis"
+				android:gravity="center"
+			/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/z_axis"
+				android:gravity="center"
+			/>
+		</TableRow>
+		
+		<TextView
+		    android:id="@+id/textView2"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/l_gyroscope"
+		    android:textAppearance="?android:attr/textAppearanceMedium"
+		/>
+		
+		<TableRow>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="14sp"
+				android:text="@string/x_axis"
+				android:gravity="center"
+			/>
+	
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="14sp"
+				android:text="@string/y_axis"
+				android:gravity="center"
+			/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="14sp"
+				android:text="@string/z_axis"
+				android:gravity="center"
+			/>
+		</TableRow>
+		
+		<TableRow>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/gyro_x_axis"
+				android:gravity="center"
+			/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/gyro_y_axis"
+				android:gravity="center"
+			/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/gyro_z_axis"
+				android:gravity="center"
+			/>
+		</TableRow>
+		
+
+</TableLayout>
+
+
+</LinearLayout>
